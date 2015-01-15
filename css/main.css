@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+
+.app {
+    position: relative;
+}
+
+    .art {
+        width: 90%;
+        max-width: 960px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+        .art__wrap {
+            position: relative;
+            display: inline-block;
+        }
+
+            .logo {
+                position: absolute;
+                bottom: 12px;
+                right: 12px;
+                display: inline-block;
+                opacity: .5;
+            }
+
+        .art__image {
+            max-width: 100%;
+            max-height: 75vh;
+        }

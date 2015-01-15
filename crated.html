@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Crated Gallery</title>
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <div id="app" class="app">
+            <div id="art" class="art"></div>
+        </div>
+
+        <script id="templateArt" type="crated/template">
+            <div class="art__wrap">
+                <a href="http://crated.com{{urls.art}}?ref=crated_chrome_extension">
+                    <img class="art__image" src="{{thumbnails.xlarge}}">
+                </a>
+                <a class="logo" href="http://crated.com">
+                    <img src="img/logo@2x.png">
+                </a>
+            </div>
+
+            <h1>{{name}}</h1>
+            <p>By <a href="http://crated.com{{urls.artist}}?ref=crated_chrome_extension">{{artist_name}}</a></p>
+
+            <p>{{description}}</p>
+        </script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
