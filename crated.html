@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Crated Gallery</title>
+        <title>New Tab</title>
         <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <div id="app" class="app">
-            <div id="art" class="art"></div>
-        </div>
+
+        <ul id="slideshow" class="slideshow"></ul>
+
+        <p class="logo">
+            <img src="img/logo@2x.png" height="30">
+        </p>
 
         <script id="templateArt" type="crated/template">
-            <div class="art__wrap">
-                <a href="http://crated.com{{urls.art}}?ref=crated_chrome_extension">
-                    <img class="art__image" src="{{thumbnails.xlarge}}">
+            <li class="slideshow__item">
+                <a class="slideshow__link" href="http://crated.com{{urls.art}}?ref=crated_chrome_extension">
+                    <span class="slideshow__image" style="background-image: url('http:{{thumbnails.xlarge}}');"></span>
+                    <h1 class="slideshow__title">
+                        {{name}}
+                        <span class="slideshow__subtitle">By {{artist_name}}</span>
+                    </h1>
                 </a>
-                <a class="logo" href="http://crated.com">
-                    <img src="img/logo@2x.png">
-                </a>
-            </div>
-
-            <h1>{{name}}</h1>
-            <p>By <a href="http://crated.com{{urls.artist}}?ref=crated_chrome_extension">{{artist_name}}</a></p>
-
-            <p>{{description}}</p>
+            </li>
         </script>
         <script src="js/app.js"></script>
     </body>
