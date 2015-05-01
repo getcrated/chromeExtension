@@ -1,9 +1,9 @@
 {
     "manifest_version": 2,
     "name": "Crated art",
-    "version": "1.0.0",
+    "version": "1.0.1",
 
-    "description": "Featured Crated art when opening a new page",
+    "description": "Rotating slideshow of featured Crated art when opening a new page",
     "icons": {
         "16": "img/icon16.png",
         "48": "img/icon48.png",
